@@ -58,7 +58,7 @@ function rigthAnswer(event) {
     increaseAnswers()
     newQuestion.style.display = "inline";
 
-  } else {
+  } else if (!(event.target.className.includes('nextQuestion'))) {
     event.target.style.backgroundColor = '#DC143C';
     rightButton.style.backgroundColor = '#90EE90'; 
     increaseAnswers()
