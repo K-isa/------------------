@@ -35,7 +35,7 @@ function randomQuestion() {
       }
     }
   }
-
+  
 }
 
 randomQuestion()
@@ -48,6 +48,7 @@ button.forEach(item => {
 
 
 function rigthAnswer(event) {
+  let rightButton = document.querySelector(".rigthAnswer");
   answerbuttons.forEach((item) => {
     item.style.pointerEvents = 'none';
   })
@@ -59,9 +60,9 @@ function rigthAnswer(event) {
 
   } else {
     event.target.style.backgroundColor = '#DC143C';
+    rightButton.style.backgroundColor = '#90EE90'; 
     increaseAnswers()
     newQuestion.style.display = "inline";
-
   }
   event.target.classList.remove('rigthAnswer')
 }
@@ -76,7 +77,6 @@ function getNewQuestion() {
     item.style.pointerEvents = 'all';
     item.style.backgroundColor = '#ffffff'
   })
-
   randomQuestion()
 }
 
@@ -89,7 +89,7 @@ function increaseRigthAnswers() {
 
 function increaseAnswers() {
   const numberOfQuestions = document.querySelector('.counter-questions__number');
-  numberOfQuestions .innerText = Number(numberOfQuestions.textContent) + 1;
+  numberOfQuestions.innerText = Number(numberOfQuestions.textContent) + 1;
 }
 
 

@@ -113,6 +113,10 @@ button:hover {
   border-radius: 7px;
 }
 
+.rightButton {
+  background-color: #fff;
+}
+
 @media screen and (max-width : 800px) {
   .counter {
     padding-right: 5px;
