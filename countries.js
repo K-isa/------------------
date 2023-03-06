@@ -390,10 +390,8 @@ let capitals = `Бастер
 Тарава
 Фунафути
 Хониаpа
-Ярен
-`;
+Ярен`;
 
 
 countries = countries.replace(/(\r\n|\n|\r)/gm, "").split(',')
 capitals = capitals.replace(/(\r\n|\n|\r)/gm, ",").split(',')
-let popped = capitals.pop()
